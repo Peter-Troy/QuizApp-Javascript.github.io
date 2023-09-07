@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Application</h1>
+        <a class="viewallquestionbutton" href="questions.html">View All Questions</a>
+        <div>
+            <input class="userquestion" type="text" id="new-question" placeholder="Enter a new question">
+            <input class="useranswer" type="text" id="new-answer" placeholder="Enter an answer">
+            <button class="addquestionbutton" id="add-button">Add Question</button>
+            <button class="startquizbutton" id="start-quiz-button">Start Quiz</button> 
+        </div>
+        <div id="question-container" class="question-container">
+            <p id="question"></p>
+        </div>
+        <div id="answer-input-container" style="display: none;">
+            <input class="answerplaceholder" type="text" id="user-answer" placeholder="Enter your answer">
+            <button class="submitanswerbutton" id="submit-answer">Submit Answer</button>
+        </div> 
+        <div id="quiz-result-container" style="display: none;">
+            <button class="startquizagainbutton" id="start-again-button">Start the Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Apply gradient background */
+    background: linear-gradient(to bottom, #0099ffac, #3f1485a0);
+}
+
+.questions-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+/* Style the page title (h1) */
+.page-title {
+    text-align: center;
+    margin-top: 0; /* Remove default margin to prevent extra spacing */
+}
+
+.question-item {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Space items evenly between the content and delete button */
+    align-items: center; /* Center items vertically */
+
+    width: 400px; /* Adjust the width as needed */
+    padding: 10px; /* Add some padding for better spacing */
+
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to left, #016e0677, #00ff156e);
+    margin: 10px auto; /* Add margin for spacing between items */
+}
+
+.delete-button {
+    width: 80px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(192, 18, 18);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.delete-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgb(192, 18, 18);
+}
+
+.returnbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(22, 160, 229);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.returnbutton:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgb(6, 56, 82);
+}
